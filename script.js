@@ -70,3 +70,8 @@ const obs = new IntersectionObserver(
 	}
 );
 obs.observe(footer);
+
+footer.addEventListener('click', function (e) {
+  if (e.target.tagName === 'A')
+  console.log('clicked')
+})
